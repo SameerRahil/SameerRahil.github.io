@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arcade · Sameer Rahil</title>
+<meta name="description" content="Sameer Rahil is a Computer Science undergraduate at LUMS working on machine-learning reliability (out-of-distribution detection, mechanistic interpretability, robust federated optimization) and software engineering research (testing, AI4SE, SE4AI and agents for software engineering).">
+<meta name="theme-color" content="#07080b">
+<meta name="color-scheme" content="dark light">
+<link rel="canonical" href="https://sameerrahil.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Arcade · Sameer Rahil">
+<meta property="og:description" content="Sameer Rahil is a Computer Science undergraduate at LUMS working on machine-learning reliability (out-of-distribution detection, mechanistic interpretability, robust federated optimization) and software engineering research (testing, AI4SE, SE4AI and agents for software engineering).">
+<meta property="og:image" content="https://sameerrahil.github.io/assets/img/og.jpg">
+<meta property="og:url" content="https://sameerrahil.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/young-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="../assets/scene/alley-mobile-720.webp" media="(max-aspect-ratio: 4/5)" imagesrcset="../assets/scene/alley-mobile-720.webp 720w, ../assets/scene/alley-mobile-1080.webp 1080w" imagesizes="100vw">
+<link rel="preload" as="image" href="../assets/scene/alley-desktop-1400.webp" media="(min-aspect-ratio: 4/5)" imagesrcset="../assets/scene/alley-desktop-1400.webp 1400w, ../assets/scene/alley-desktop-2000.webp 2000w" imagesizes="100vw">
+<link rel="stylesheet" href="../assets/css/home.css">
+</head>
+<body class="home" data-root="../">
+<a class="skip" href="#shelf-index">Skip to the shelf list</a>
+<div class="stage">
+  <div class="mode-dock"><nav class="mode mode-arcade" aria-label="Site version">
+  <span class="mode-thumb" aria-hidden="true"></span>
+  <a class="mode-opt" href="../">Professional</a>
+  <a class="mode-opt" href="../arcade/" aria-current="page">Arcade</a>
+</nav></div>
+  <picture class="scene">
+    <source media="(max-aspect-ratio: 4/5)" sizes="100vw"
+      srcset="../assets/scene/alley-mobile-720.webp 720w, ../assets/scene/alley-mobile-1080.webp 1080w">
+    <img src="../assets/scene/alley-desktop-1400.webp"
+      srcset="../assets/scene/alley-desktop-1400.webp 1400w, ../assets/scene/alley-desktop-2000.webp 2000w"
+      sizes="100vw" alt="" fetchpriority="high" decoding="async" width="1400" height="875">
+  </picture>
+  
+<div class="street" aria-hidden="true">
+  <div class="st-window"><i class="blind"></i><i class="plant"></i></div>
+  <div class="st-glow"></div>
+  <div class="stall">
+    <svg class="stall-back" viewBox="0 0 360 414" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="st-in" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd596"/><stop offset=".5" stop-color="#f0953f"/><stop offset="1" stop-color="#8a3d16"/></linearGradient>
+  </defs>
+  <rect x="14" y="60" width="332" height="200" fill="url(#st-in)"/>
+  <g fill="#6a2f12" opacity=".6">
+    <rect x="30" y="118" width="120" height="5"/><rect x="30" y="170" width="120" height="5"/>
+    <rect x="38" y="96" width="9" height="22"/><rect x="52" y="100" width="9" height="18"/><rect x="66" y="94" width="9" height="24"/>
+    <rect x="92" y="98" width="12" height="20"/><rect x="112" y="102" width="20" height="16"/>
+    <rect x="40" y="150" width="22" height="20"/><rect x="70" y="146" width="9" height="24"/><rect x="86" y="152" width="30" height="18"/>
+  </g>
+  <rect x="196" y="78" width="120" height="60" fill="#fff1d6" opacity=".55"/>
+  <g fill="#7a3a16" opacity=".55"><rect x="204" y="88" width="60" height="5"/><rect x="204" y="100" width="88" height="4"/><rect x="204" y="110" width="74" height="4"/><rect x="204" y="120" width="82" height="4"/></g>
+</svg>
+    <div class="mc vendor">
+<div class="mc-fig mc-front" style="--skin:#c99568;--hair:#1b140f;--shirt:#efe9dc;--shirt2:#d2ccbf;--apron:#22325a">
+  <i class="mc-arm l"></i><i class="mc-torso"></i><i class="mc-head"></i><i class="band"></i><i class="apron"></i><i class="mc-arm r"></i>
+</div></div>
+    <svg class="stall-front" viewBox="0 0 360 414" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="st-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a3520"/><stop offset="1" stop-color="#2c190e"/></linearGradient>
+  </defs>
+  <path d="M8 12 H352 L360 44 H0 Z" fill="#2a2f34"/>
+  <g stroke="#1a1e22" stroke-width="2"><path d="M40 12 L36 44 M80 12 L78 44 M120 12 L119 44 M160 12 V44 M200 12 V44 M240 12 L241 44 M280 12 L282 44 M320 12 L324 44"/></g>
+  <rect x="0" y="44" width="360" height="20" fill="#4a2c1a"/>
+  <rect x="0" y="44" width="360" height="3" fill="#7a5032"/>
+  <g class="bulbs"><circle cx="14" cy="68" r="3.2" fill="#ffe7b0"/><circle cx="39.5" cy="70" r="3.2" fill="#ffe7b0"/><circle cx="65" cy="68" r="3.2" fill="#ffe7b0"/><circle cx="90.5" cy="70" r="3.2" fill="#ffe7b0"/><circle cx="116" cy="68" r="3.2" fill="#ffe7b0"/><circle cx="141.5" cy="70" r="3.2" fill="#ffe7b0"/><circle cx="167" cy="68" r="3.2" fill="#ffe7b0"/><circle cx="192.5" cy="70" r="3.2" fill="#ffe7b0"/><circle cx="218" cy="68" r="3.2" fill="#ffe7b0"/><circle cx="243.5" cy="70" r="3.2" fill="#ffe7b0"/><circle cx="269" cy="68" r="3.2" fill="#ffe7b0"/><circle cx="294.5" cy="70" r="3.2" fill="#ffe7b0"/><circle cx="320" cy="68" r="3.2" fill="#ffe7b0"/><circle cx="345.5" cy="70" r="3.2" fill="#ffe7b0"/></g>
+  <g class="noren">
+    <rect x="78" y="64" width="49" height="84" fill="#1f2f55"/><rect x="130" y="64" width="49" height="84" fill="#1c2b4f"/>
+    <rect x="182" y="64" width="49" height="84" fill="#1f2f55"/><rect x="234" y="64" width="49" height="84" fill="#1c2b4f"/>
+    <circle cx="180" cy="104" r="16" fill="none" stroke="#efe6d2" stroke-width="3" opacity=".85"/>
+    <path d="M168 112 L192 96" stroke="#efe6d2" stroke-width="3" opacity=".85"/>
+    <circle cx="176" cy="107" r="3" fill="#efe6d2" opacity=".85"/><circle cx="184" cy="101" r="3" fill="#efe6d2" opacity=".85"/>
+  </g>
+  <rect x="6" y="60" width="11" height="354" fill="#3a2418"/><rect x="343" y="60" width="11" height="354" fill="#3a2418"/>
+  <rect x="234" y="226" width="104" height="26" rx="2" fill="#1b1d20"/>
+  <rect class="coals" x="238" y="227" width="96" height="8" rx="2" fill="#ff7a2a"/>
+  <g stroke="#d9c7a3" stroke-width="2.2" stroke-linecap="round">
+    <path d="M246 222 L266 238 M262 220 L282 236 M280 221 L300 237 M298 220 L318 236"/>
+  </g>
+  <g fill="#7a3412"><circle cx="252" cy="226" r="3.4"/><circle cx="258" cy="231" r="3.4"/><circle cx="268" cy="224" r="3.4"/><circle cx="274" cy="229" r="3.4"/><circle cx="286" cy="225" r="3.4"/><circle cx="292" cy="230" r="3.4"/><circle cx="304" cy="224" r="3.4"/><circle cx="310" cy="229" r="3.4"/></g>
+  <rect x="0" y="248" width="360" height="14" fill="#9a6a3e"/>
+  <rect x="0" y="248" width="360" height="3" fill="#c79a66"/>
+  <rect x="4" y="262" width="352" height="152" fill="url(#st-wood)"/>
+  <g stroke="#1e110a" stroke-opacity=".6" stroke-width="2"><path d="M40 262 V414 M80 262 V414 M120 262 V414 M160 262 V414 M200 262 V414 M240 262 V414 M280 262 V414 M320 262 V414"/></g>
+  <rect x="44" y="282" width="272" height="40" rx="2" fill="#8e2b2b"/>
+  <rect x="44" y="282" width="272" height="3" fill="#c0463c"/>
+  <text x="180" y="311" text-anchor="middle" font-family="'Young Serif', Georgia, serif" font-size="22" letter-spacing="3" fill="#f4e7cc">YAKITORI · BBQ</text>
+  <g fill="#8e2b2b"><ellipse cx="78" cy="340" rx="24" ry="7"/><ellipse cx="160" cy="340" rx="24" ry="7"/></g>
+  <g fill="#b33a33"><ellipse cx="78" cy="337" rx="24" ry="6"/><ellipse cx="160" cy="337" rx="24" ry="6"/></g>
+  <g stroke="#1a1310" stroke-width="4"><path d="M64 344 L58 414 M92 344 L98 414 M146 344 L140 414 M174 344 L180 414"/></g>
+</svg>
+    <svg class="lantern-el lt1" style="left:calc(8.33% - 11.1%)" viewBox="-40 60 80 140" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="st-lantern1" cx=".42" cy=".38" r=".7"><stop offset="0" stop-color="#ffd9a8"/><stop offset=".45" stop-color="#f0563a"/><stop offset="1" stop-color="#9a1d1d"/></radialGradient>
+      <radialGradient id="st-lglow1"><stop offset="0" stop-color="#ff7a4a" stop-opacity=".55"/><stop offset="1" stop-color="#ff7a4a" stop-opacity="0"/></radialGradient>
+    </defs>
+    <line x1="0" y1="62" x2="0" y2="76" stroke="#1a1310" stroke-width="2"/>
+    <circle cx="0" cy="100" r="38" fill="url(#st-lglow1)"/>
+    <rect x="-9" y="74" width="18" height="5" rx="1.5" fill="#1a1310"/>
+    <ellipse cx="0" cy="100" rx="17" ry="22" fill="url(#st-lantern1)"/>
+    <g stroke="#7a1414" stroke-opacity=".55" stroke-width="1"><path d="M-16 92 H16 M-17 100 H17 M-16 108 H16"/></g>
+    <rect x="-9" y="121" width="18" height="5" rx="1.5" fill="#1a1310"/>
+  </svg><svg class="lantern-el lt2" style="left:calc(91.67% - 11.1%)" viewBox="-40 60 80 140" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="st-lantern2" cx=".42" cy=".38" r=".7"><stop offset="0" stop-color="#ffd9a8"/><stop offset=".45" stop-color="#f0563a"/><stop offset="1" stop-color="#9a1d1d"/></radialGradient>
+      <radialGradient id="st-lglow2"><stop offset="0" stop-color="#ff7a4a" stop-opacity=".55"/><stop offset="1" stop-color="#ff7a4a" stop-opacity="0"/></radialGradient>
+    </defs>
+    <line x1="0" y1="62" x2="0" y2="76" stroke="#1a1310" stroke-width="2"/>
+    <circle cx="0" cy="100" r="38" fill="url(#st-lglow2)"/>
+    <rect x="-9" y="74" width="18" height="5" rx="1.5" fill="#1a1310"/>
+    <ellipse cx="0" cy="100" rx="17" ry="22" fill="url(#st-lantern2)"/>
+    <g stroke="#7a1414" stroke-opacity=".55" stroke-width="1"><path d="M-16 92 H16 M-17 100 H17 M-16 108 H16"/></g>
+    <rect x="-9" y="121" width="18" height="5" rx="1.5" fill="#1a1310"/>
+  </svg>
+    <i class="coal-glow"></i>
+    <div class="mc cust cust1">
+<div class="mc-fig mc-back eats" style="--skin:#d9ad86;--hair:#4a3020;--shirt:#3d5a3b;--shirt2:#2f472e">
+  <i class="mc-torso"></i><i class="mc-head"></i><i class="mc-arm l"></i><i class="mc-arm r"></i>
+</div></div>
+    <div class="mc cust cust2">
+<div class="mc-fig mc-back " style="--skin:#b98563;--hair:#2e2620;--shirt:#5b2f4a;--shirt2:#47243a">
+  <i class="mc-torso"></i><i class="mc-head"></i><i class="mc-arm l"></i><i class="mc-arm r"></i>
+</div></div>
+    <div class="smoke"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="sparks"><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+  <div class="st-board"><span>OPEN<br>LATE</span></div>
+  <div class="st-refl"></div>
+  <div class="lane">
+    <div class="walker w1 ltr"><div class="bob">
+<div class="mc-fig" style="--skin:#c99a74;--hair:#2b1d14;--shirt:#1f5f5a;--shirt2:#174a46;--pants:#2c3a55;--shoes:#e8e2d4">
+  <i class="mc-arm back"></i><i class="mc-leg back"></i><i class="mc-leg front"></i>
+  <i class="mc-torso"></i><i class="mc-head"></i><i class="mc-arm front"></i>
+</div></div></div>
+    <div class="walker w2 rtl"><div class="bob">
+<div class="mc-fig" style="--skin:#e0b48c;--hair:#14100d;--shirt:#8e2b2b;--shirt2:#6c1f20;--pants:#1f2125;--shoes:#3a2a1e">
+  <i class="mc-arm back"></i><i class="mc-leg back"></i><i class="mc-leg front"></i>
+  <i class="mc-torso"></i><i class="mc-head"></i><i class="umbrella"></i><i class="mc-arm front"></i>
+</div></div></div>
+    <div class="walker w3 ltr"><div class="bob">
+<div class="mc-fig" style="--skin:#a87452;--hair:#3b2619;--shirt:#b98a2e;--shirt2:#8f6a22;--pants:#5a3d2a;--shoes:#2a1f18">
+  <i class="mc-arm back"></i><i class="mc-leg back"></i><i class="mc-leg front"></i>
+  <i class="mc-torso"></i><i class="mc-head"></i><i class="bag"></i><i class="mc-arm front"></i>
+</div></div></div>
+    <div class="walker w4 rtl"><div class="bob">
+<div class="mc-fig" style="--skin:#d8a982;--hair:#101012;--shirt:#e9e6de;--shirt2:#bdb9b0;--pants:#3b4049;--shoes:#141414;--tie:#203a66">
+  <i class="mc-arm back"></i><i class="mc-leg back"></i><i class="mc-leg front"></i>
+  <i class="mc-torso"></i><i class="mc-head"></i><i class="tie"></i><i class="mc-arm front"></i>
+</div></div></div>
+    <div class="walker w5 ltr"><div class="bob">
+<div class="mc-fig" style="--skin:#e7bf97;--hair:#1a120e;--shirt:#25345c;--shirt2:#1c2848;--pants:#25345c;--shoes:#3a2a1e;--collar:#efe9dc">
+  <i class="mc-arm back"></i><i class="mc-leg back"></i><i class="mc-leg front"></i>
+  <i class="mc-torso"></i><i class="mc-head"></i><i class="collar"></i><i class="mc-arm front"></i>
+</div></div></div>
+    <div class="walker w6 rtl"><div class="bob">
+<div class="mc-fig" style="--skin:#e2b892;--hair:#5a3a22;--shirt:#6d6a5c;--shirt2:#56544a;--pants:#24272c;--shoes:#141414">
+  <i class="mc-arm back"></i><i class="mc-leg back"></i><i class="mc-leg front"></i>
+  <i class="mc-torso"></i><i class="mc-head"></i><i class="mc-arm front"></i>
+</div></div></div>
+    <div class="walker w7 ltr"><div class="bob">
+<div class="mc-fig" style="--skin:#9c6b4b;--hair:#121010;--shirt:#d9cfb8;--shirt2:#b5ab95;--pants:#3a4a6a;--shoes:#e8e2d4">
+  <i class="mc-arm back"></i><i class="mc-leg back"></i><i class="mc-leg front"></i>
+  <i class="mc-torso"></i><i class="mc-head"></i><i class="bag"></i><i class="mc-arm front"></i>
+</div></div></div>
+  </div>
+</div>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <header class="ident">
+    <h1 class="name">Sameer Rahil</h1>
+    <p class="tagline">Machine Learning &amp; Software Engineering Research</p>
+    <div class="links-row">
+      <nav class="quick" aria-label="Primary"><a href="../cv/Sameer-Rahil-CV.pdf" target="_blank" rel="noopener">CV</a><a href="../research/">Research</a><a href="../contact/">Contact</a></nav>
+      <details class="index" id="shelf-index">
+        <summary>All shelves</summary>
+        <ol class="index-list">
+          <li><a href="../research/"><span class="code">01</span> Research</a></li><li><a href="../leadership/"><span class="code">02</span> Leadership</a></li><li><a href="../experience/"><span class="code">03</span> Experience</a></li><li><a href="../cv/"><span class="code">04</span> CV</a></li><li><a href="../teaching/"><span class="code">05</span> Teaching</a></li><li><a href="../projects/"><span class="code">06</span> Projects</a></li><li><a href="../off-hours/"><span class="code">07</span> Off Hours</a></li><li><a href="../honors/"><span class="code">08</span> Honors</a></li>
+          <li><a href="../contact/"><span class="code">··</span> Contact</a></li>
+        </ol>
+      </details>
+    </div>
+    <p class="howto" id="machine-help">Pick a shelf through the glass or key in its code. Drop in a free coin, then open the pickup tray.</p>
+  </header>
+
+  <section class="vend" aria-labelledby="vend-title">
+    <h2 id="vend-title" class="sr-only">Vending machine</h2>
+    <div class="vend-wrap">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="prop prop-web-wrap" aria-hidden="true"><svg class="prop-web" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+  <g fill="none" stroke="#dfe8ef" stroke-opacity=".22" stroke-width=".7">
+    <path d="M0 0 L120 22 M0 0 L104 64 M0 0 L70 104 M0 0 L24 120"/>
+    <path d="M30 5.5 Q 26 18 26 15 Q 22 26 17.5 30 Q 12 34 6 36"/>
+    <path d="M58 10.6 Q 52 26 50.5 30 Q 44 44 34 51 Q 22 62 12 70"/>
+    <path d="M86 15.7 Q 78 36 76 44 Q 64 64 50 74 Q 34 88 18 104"/>
+  </g>
+</svg></div>
+      <div class="prop prop-dog-wrap" aria-hidden="true"><svg class="prop-dog" viewBox="0 0 200 120" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="dog-f" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#121417"/><stop offset=".55" stop-color="#1c2326"/><stop offset="1" stop-color="#2f4645"/></linearGradient>
+    <linearGradient id="dog-t" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b5755"/><stop offset="1" stop-color="#151a1c"/></linearGradient>
+    <linearGradient id="dog-rim" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff7ab5" stop-opacity=".45"/><stop offset=".35" stop-color="#9fe7df" stop-opacity=".25"/><stop offset="1" stop-color="#c8fff5" stop-opacity=".85"/></linearGradient>
+  </defs>
+  <ellipse cx="100" cy="113" rx="92" ry="7" fill="#000" opacity=".6"/>
+  <path d="M38 101 C 34 76, 66 61, 108 60 C 146 59, 172 74, 174 95 C 175 107, 158 112, 128 112 L 56 112 C 44 112, 38 108, 38 101 Z" fill="url(#dog-f)"/>
+  <path d="M150 74 C 168 58, 192 66, 184 84 C 178 96, 158 92, 164 80" fill="none" stroke="url(#dog-t)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M152 70 C 168 56, 190 62, 186 78" fill="none" stroke="#c8fff5" stroke-opacity=".5" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M70 108 C 82 100, 104 100, 116 106 L 116 112 L 66 112 Z" fill="#171c1f"/>
+  <path d="M10 104 C 10 100, 24 99, 46 100 L 72 102 L 72 112 L 16 112 C 10 112, 8 108, 10 104 Z" fill="#1a1f22"/>
+  <path d="M18 96 C 12 84, 20 69, 37 69 C 51 69, 60 79, 61 91 C 62 103, 52 109, 38 109 L 24 109 C 14 109, 12 102, 18 96 Z" fill="url(#dog-f)"/>
+  <path d="M24 75 L 21 55 L 37 68 Z" fill="#1c2224"/>
+  <path d="M42 69 L 51 52 L 55 74 Z" fill="#232b2d"/>
+  <path d="M43 68 L 51 53" stroke="#c8fff5" stroke-opacity=".55" stroke-width="1.3"/>
+  <path d="M51 53 L 55 74" stroke="#c8fff5" stroke-opacity=".35" stroke-width="1"/>
+  <path d="M18 96 C 7 96, 3 100, 5 104 C 7 108, 15 108, 21 106 Z" fill="#14181a"/>
+  <circle cx="6.5" cy="101.5" r="2" fill="#050607"/>
+  <path d="M29 88 q4.5 2.4 9 0" fill="none" stroke="#8fb7b2" stroke-opacity=".8" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M37 69 C 50 69, 59 78, 61 90" fill="none" stroke="url(#dog-rim)" stroke-width="2"/>
+  <path d="M64 64 C 92 56, 132 55, 156 64 C 166 70, 172 80, 174 93" fill="none" stroke="url(#dog-rim)" stroke-width="2.4" stroke-linecap="round"/>
+</svg></div>
+      <div class="prop prop-trash-wrap" aria-hidden="true"><svg class="prop-trash" viewBox="0 0 100 150" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="tr-b" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7fb3ad"/><stop offset=".12" stop-color="#55615f"/><stop offset=".35" stop-color="#3a4141"/>
+      <stop offset=".6" stop-color="#262b2c"/><stop offset="1" stop-color="#121516"/>
+    </linearGradient>
+    <linearGradient id="tr-l" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a9cfca"/><stop offset=".3" stop-color="#5f6b6a"/><stop offset="1" stop-color="#1a1e1f"/></linearGradient>
+  </defs>
+  <ellipse cx="50" cy="143" rx="44" ry="6" fill="#000" opacity=".55"/>
+  <path d="M12 40 L18 138 Q50 146 82 138 L88 40 Z" fill="url(#tr-b)"/>
+  <g stroke="#0b0d0e" stroke-opacity=".55" stroke-width="2.2">
+    <path d="M22 44 L26 136 M34 44 L36 139 M46 45 L47 140 M58 45 L57 140 M70 44 L68 139 M80 43 L77 137"/>
+  </g>
+  <g stroke="#cfe6e2" stroke-opacity=".12" stroke-width="1"><path d="M23 44 L27 136 M35 44 L37 139"/></g>
+  <path d="M14 62 Q50 70 86 62 M16 112 Q50 120 84 112" fill="none" stroke="#5b6463" stroke-width="3"/>
+  <path d="M58 92 q6 3 4 9" fill="none" stroke="#0b0d0e" stroke-opacity=".6" stroke-width="2"/>
+  <ellipse cx="50" cy="40" rx="42" ry="9" fill="url(#tr-l)"/>
+  <ellipse cx="50" cy="38" rx="38" ry="7" fill="#2a3031"/>
+  <rect x="40" y="27" width="20" height="8" rx="4" fill="none" stroke="#7f8b8a" stroke-width="3"/>
+  <path d="M16 70 l2 30" stroke="#9fe7df" stroke-opacity=".25" stroke-width="2"/>
+</svg></div>
+      <div class="floor-refl" aria-hidden="true"></div>
+
+      <div class="machine" id="machine" aria-describedby="machine-help">
+        <div class="cab">
+          <div class="marquee" aria-hidden="true">
+            <span class="mq-name">Afterglow</span>
+            <span class="mq-en">Est. 2003</span>
+          </div>
+
+          <div class="screen-wrap">
+            <div class="screen" id="screen" tabindex="0" role="group"
+              aria-label="Machine display. While it has focus, type a two-digit code and press Enter; Backspace clears."
+              aria-describedby="screen-text">
+              <p class="scr-l1" id="scr-l1">INSERT COIN</p>
+              <p class="scr-l2" id="scr-l2">PICK A SHELF</p>
+              <p class="scr-l3"><span id="scr-credit">CREDIT 0</span><span id="scr-price"></span></p>
+              <span class="sr-only" id="screen-text">Credit 0. No shelf selected.</span>
+            </div>
+          </div>
+
+          <div class="glass">
+            <div class="glass-tube" aria-hidden="true"></div>
+            <ul class="shelves" aria-label="Shelves behind the glass">
+              
+<li class="slot" data-code="01">
+  <button class="slot-btn" type="button" data-code="01"
+    aria-label="01, Research: a banded paper reprint, 1 coin">
+    <span class="slot-coil"><svg class="coil" viewBox="0 0 120 24" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g class="coil-turns"><ellipse cx="-6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 -6 12)"/><ellipse cx="6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 6 12)"/><ellipse cx="18" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 18 12)"/><ellipse cx="30" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 30 12)"/><ellipse cx="42" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 42 12)"/><ellipse cx="54" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 54 12)"/><ellipse cx="66" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 66 12)"/><ellipse cx="78" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 78 12)"/><ellipse cx="90" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 90 12)"/><ellipse cx="102" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 102 12)"/><ellipse cx="114" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 114 12)"/><ellipse cx="126" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 126 12)"/></g></svg></span>
+    <span class="slot-obj"><svg class="obj obj-reprint" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="rp-p-s01" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f0e0"/><stop offset="1" stop-color="#dccfb3"/></linearGradient>
+      <linearGradient id="rp-b-s01" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8443c"/><stop offset=".55" stop-color="#8e2b2b"/><stop offset="1" stop-color="#5c1a1b"/></linearGradient>
+    </defs>
+    <ellipse cx="60" cy="111" rx="36" ry="4.5" fill="#000" opacity=".38"/>
+    <rect x="31" y="15" width="64" height="90" rx="2" fill="#bfb293" transform="rotate(4 63 60)"/>
+    <rect x="25" y="18" width="64" height="90" rx="2" fill="#d6c9ab" transform="rotate(-2.5 57 63)"/>
+    <rect x="27" y="14" width="66" height="92" rx="2" fill="url(#rp-p-s01)"/>
+    <rect x="34" y="21" width="46" height="4.4" rx="1" fill="#25262b" opacity=".88"/>
+    <rect x="34" y="28.5" width="32" height="2.4" rx="1" fill="#25262b" opacity=".5"/>
+    <g fill="#25262b" opacity=".28">
+      <rect x="34" y="35" width="52" height="1.8"/><rect x="34" y="39" width="49" height="1.8"/>
+      <rect x="34" y="43" width="51" height="1.8"/><rect x="34" y="47" width="38" height="1.8"/>
+      <rect x="62" y="79" width="24" height="1.6"/><rect x="62" y="83" width="22" height="1.6"/>
+      <rect x="62" y="87" width="24" height="1.6"/><rect x="62" y="91" width="18" height="1.6"/>
+      <rect x="34" y="99" width="52" height="1.6"/>
+    </g>
+    <rect x="34" y="77" width="24" height="18" fill="#fff" stroke="#25262b" stroke-opacity=".35" stroke-width=".8"/>
+    <polyline points="35.5,92 40,88.5 44,89.5 48,83 52,84 56.5,79.5" fill="none" stroke="#17605b" stroke-width="1.7" stroke-linejoin="round"/>
+    <polyline points="35.5,93 40,92 44,90.5 48,90 52,88 56.5,87.5" fill="none" stroke="#8e2b2b" stroke-width="1.1" stroke-dasharray="2 1.4"/>
+    <rect x="23" y="53" width="74" height="18" rx="1.5" fill="url(#rp-b-s01)"/>
+    <rect x="23" y="53" width="74" height="1.6" fill="#fff" opacity=".22"/>
+    <rect x="23" y="69.4" width="74" height="1.6" fill="#000" opacity=".2"/>
+    <text x="60" y="65.3" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, monospace" font-weight="500" font-size="7.4" letter-spacing="1.8" fill="#f6ead0">REPRINT</text>
+    <path d="M27 14 h66 v92 h-66z" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width=".6"/></svg></span>
+  </button>
+  <p class="tag" aria-hidden="true">
+    <span class="tag-code">01</span>
+    <span class="tag-label">Research</span>
+    <span class="tag-price"><span class="pips" aria-hidden="true"><i></i></span><span class="tag-price-n">1</span></span>
+  </p>
+</li>
+<li class="slot" data-code="02">
+  <button class="slot-btn" type="button" data-code="02"
+    aria-label="02, Leadership: a cash tin with its ledger, 1 coin">
+    <span class="slot-coil"><svg class="coil" viewBox="0 0 120 24" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g class="coil-turns"><ellipse cx="-6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 -6 12)"/><ellipse cx="6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 6 12)"/><ellipse cx="18" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 18 12)"/><ellipse cx="30" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 30 12)"/><ellipse cx="42" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 42 12)"/><ellipse cx="54" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 54 12)"/><ellipse cx="66" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 66 12)"/><ellipse cx="78" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 78 12)"/><ellipse cx="90" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 90 12)"/><ellipse cx="102" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 102 12)"/><ellipse cx="114" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 114 12)"/><ellipse cx="126" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 126 12)"/></g></svg></span>
+    <span class="slot-obj"><svg class="obj obj-cashtin" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="ct-b-s02" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c8783"/><stop offset=".6" stop-color="#46605c"/><stop offset="1" stop-color="#2c3d3a"/></linearGradient>
+      <linearGradient id="ct-l-s02" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#93aca8"/><stop offset="1" stop-color="#557170"/></linearGradient>
+      <linearGradient id="ct-br-s02" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1d79c"/><stop offset=".5" stop-color="#b9935a"/><stop offset="1" stop-color="#7b5d31"/></linearGradient>
+    </defs>
+    <ellipse cx="60" cy="111" rx="42" ry="4.5" fill="#000" opacity=".38"/>
+    <g transform="rotate(-9 62 34)">
+      <rect x="32" y="16" width="56" height="34" rx="2" fill="#7e2627"/>
+      <rect x="34" y="18" width="52" height="3.6" fill="#efe4c9"/>
+      <rect x="33" y="27" width="54" height="2.2" fill="#d7b76c" opacity=".9"/>
+      <rect x="33" y="41" width="54" height="2.2" fill="#d7b76c" opacity=".9"/>
+    </g>
+    <rect x="15" y="50" width="90" height="54" rx="5" fill="url(#ct-b-s02)"/>
+    <rect x="13" y="41" width="94" height="17" rx="4" fill="url(#ct-l-s02)"/>
+    <rect x="15" y="42.5" width="90" height="1.6" rx=".8" fill="#fff" opacity=".35"/>
+    <rect x="45" y="35" width="30" height="7" rx="3.5" fill="none" stroke="#25302e" stroke-width="3"/>
+    <rect x="54" y="56" width="12" height="13" rx="2" fill="url(#ct-br-s02)"/>
+    <circle cx="60" cy="61" r="1.8" fill="#2a1d0c"/><rect x="59.2" y="61" width="1.6" height="4" fill="#2a1d0c"/>
+    <rect x="25" y="80" width="34" height="9.5" rx="1" fill="#141618"/>
+    <text x="42" y="87" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, monospace" font-weight="500" font-size="6" letter-spacing="1.2" fill="#e9eef0">LEDGER</text>
+    <g stroke="#dfe9e7" stroke-opacity=".28" stroke-width=".7">
+      <path d="M72 84 l10 -3"/><path d="M76 92 l12 -2"/><path d="M20 96 l6 -1"/>
+    </g>
+    <ellipse cx="90" cy="88" rx="7.5" ry="7.5" fill="url(#ct-br-s02)"/>
+    <ellipse cx="90" cy="88" rx="5.2" ry="5.2" fill="none" stroke="#7b5d31" stroke-width=".8"/></svg></span>
+  </button>
+  <p class="tag" aria-hidden="true">
+    <span class="tag-code">02</span>
+    <span class="tag-label">Leadership</span>
+    <span class="tag-price"><span class="pips" aria-hidden="true"><i></i></span><span class="tag-price-n">1</span></span>
+  </p>
+</li>
+<li class="slot" data-code="03">
+  <button class="slot-btn" type="button" data-code="03"
+    aria-label="03, Experience: a badge wallet, 1 coin">
+    <span class="slot-coil"><svg class="coil" viewBox="0 0 120 24" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g class="coil-turns"><ellipse cx="-6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 -6 12)"/><ellipse cx="6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 6 12)"/><ellipse cx="18" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 18 12)"/><ellipse cx="30" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 30 12)"/><ellipse cx="42" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 42 12)"/><ellipse cx="54" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 54 12)"/><ellipse cx="66" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 66 12)"/><ellipse cx="78" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 78 12)"/><ellipse cx="90" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 90 12)"/><ellipse cx="102" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 102 12)"/><ellipse cx="114" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 114 12)"/><ellipse cx="126" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 126 12)"/></g></svg></span>
+    <span class="slot-obj"><svg class="obj obj-badge" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="bd-l-s03" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8a5634"/><stop offset=".55" stop-color="#6a3c22"/><stop offset="1" stop-color="#4a2915"/></linearGradient>
+      <linearGradient id="bd-m-s03" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8d949b"/><stop offset=".5" stop-color="#e4e9ec"/><stop offset="1" stop-color="#7a8188"/></linearGradient>
+    </defs>
+    <ellipse cx="60" cy="111" rx="32" ry="4.5" fill="#000" opacity=".38"/>
+    <rect x="54" y="0" width="12" height="16" fill="#17605b"/>
+    <rect x="54" y="0" width="3" height="16" fill="#fff" opacity=".15"/>
+    <rect x="52" y="13" width="16" height="9" rx="2" fill="url(#bd-m-s03)"/>
+    <rect x="57" y="20" width="6" height="8" rx="1.5" fill="url(#bd-m-s03)"/>
+    <rect x="27" y="26" width="66" height="82" rx="7" fill="url(#bd-l-s03)"/>
+    <rect x="31" y="30" width="58" height="74" rx="5" fill="none" stroke="#d9b98d" stroke-opacity=".55" stroke-width=".9" stroke-dasharray="2.2 1.6"/>
+    <rect x="35" y="35" width="50" height="38" rx="2.5" fill="#f2ecdf"/>
+    <rect x="35" y="35" width="50" height="8" rx="2.5" fill="#17605b"/>
+    <rect x="35" y="40" width="50" height="3" fill="#17605b"/>
+    <text x="60" y="41.6" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, monospace" font-weight="500" font-size="4.6" letter-spacing="1.1" fill="#f2ecdf">APPOINTMENT</text>
+    <rect x="39" y="47" width="13" height="16" rx="1" fill="#c9c0ac"/>
+    <circle cx="45.5" cy="53" r="3.2" fill="#8d8572"/><path d="M39.5 63 q6 -7 12 0z" fill="#8d8572"/>
+    <text x="69" y="58" text-anchor="middle" font-family="'Young Serif', Georgia, serif" font-size="13" fill="#8e2b2b">TA</text>
+    <rect x="56" y="63" width="25" height="1.6" fill="#25262b" opacity=".4"/>
+    <rect x="56" y="67" width="18" height="1.6" fill="#25262b" opacity=".3"/>
+    <path d="M35 35 h50 v38 h-50z" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width=".8"/>
+    <path d="M37 37 L58 37 L44 71 L37 71z" fill="#fff" opacity=".18"/>
+    <rect x="34" y="80" width="40" height="22" rx="1.5" fill="#e6dcc6" transform="rotate(-4 54 91)"/>
+    <rect x="44" y="83" width="40" height="20" rx="1.5" fill="#c9d8d4" transform="rotate(3 64 93)"/>
+    <rect x="31" y="88" width="58" height="16" rx="3" fill="#5a321b"/>
+    <rect x="31" y="88" width="58" height="1.4" fill="#000" opacity=".25"/></svg></span>
+  </button>
+  <p class="tag" aria-hidden="true">
+    <span class="tag-code">03</span>
+    <span class="tag-label">Experience</span>
+    <span class="tag-price"><span class="pips" aria-hidden="true"><i></i></span><span class="tag-price-n">1</span></span>
+  </p>
+</li>
+<li class="slot" data-code="04">
+  <button class="slot-btn" type="button" data-code="04"
+    aria-label="04, CV: a sealed dossier envelope, 1 coin">
+    <span class="slot-coil"><svg class="coil" viewBox="0 0 120 24" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g class="coil-turns"><ellipse cx="-6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 -6 12)"/><ellipse cx="6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 6 12)"/><ellipse cx="18" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 18 12)"/><ellipse cx="30" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 30 12)"/><ellipse cx="42" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 42 12)"/><ellipse cx="54" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 54 12)"/><ellipse cx="66" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 66 12)"/><ellipse cx="78" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 78 12)"/><ellipse cx="90" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 90 12)"/><ellipse cx="102" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 102 12)"/><ellipse cx="114" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 114 12)"/><ellipse cx="126" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 126 12)"/></g></svg></span>
+    <span class="slot-obj"><svg class="obj obj-envelope" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="en-k-s04" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8b67a"/><stop offset="1" stop-color="#a9803f"/></linearGradient>
+      <linearGradient id="en-f-s04" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c49a58"/><stop offset="1" stop-color="#9c7438"/></linearGradient>
+      <radialGradient id="en-s-s04" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#c24a40"/><stop offset=".6" stop-color="#8e2b2b"/><stop offset="1" stop-color="#5a1718"/></radialGradient>
+    </defs>
+    <ellipse cx="60" cy="111" rx="42" ry="4.5" fill="#000" opacity=".38"/>
+    <rect x="16" y="26" width="88" height="78" rx="3" fill="url(#en-k-s04)"/>
+    <path d="M16 29 L60 66 L104 29 L104 26 L16 26z" fill="url(#en-f-s04)"/>
+    <path d="M16 29 L60 66 L104 29" fill="none" stroke="#6e4f22" stroke-opacity=".5" stroke-width="1"/>
+    <path d="M16 104 L52 74 M104 104 L68 74" stroke="#8a6630" stroke-opacity=".35" stroke-width="1"/>
+    <rect x="24" y="82" width="34" height="15" rx="1" fill="#f4eee0"/>
+    <text x="41" y="93.3" text-anchor="middle" font-family="'Young Serif', Georgia, serif" font-size="11" fill="#1d1b19">CV</text>
+    <rect x="70" y="84" width="24" height="1.5" fill="#5b4220" opacity=".45"/>
+    <rect x="70" y="88" width="18" height="1.5" fill="#5b4220" opacity=".35"/>
+    <path d="M60 54 c5 -1 9 1 10.5 5 c1.8 4 0 8.5 -3 10.5 c-3 2.2 -8.2 2.6 -11.5 .4 c-3.6 -2.3 -4.9 -7.2 -3 -10.8 c1.3 -2.7 4.2 -4.6 7 -5.1z" fill="url(#en-s-s04)"/>
+    <circle cx="60.5" cy="62.5" r="6.2" fill="none" stroke="#f1c9b8" stroke-opacity=".35" stroke-width=".8"/>
+    <text x="60.5" y="65.4" text-anchor="middle" font-family="'Young Serif', Georgia, serif" font-size="7.4" fill="#f6d9cb" fill-opacity=".9">SR</text>
+    <path d="M18 27 h84" stroke="#fff" stroke-opacity=".3" stroke-width=".8"/></svg></span>
+  </button>
+  <p class="tag" aria-hidden="true">
+    <span class="tag-code">04</span>
+    <span class="tag-label">CV</span>
+    <span class="tag-price"><span class="pips" aria-hidden="true"><i></i></span><span class="tag-price-n">1</span></span>
+  </p>
+</li>
+<li class="slot" data-code="05">
+  <button class="slot-btn" type="button" data-code="05"
+    aria-label="05, Teaching: a chalkboard teaching pack, 1 coin">
+    <span class="slot-coil"><svg class="coil" viewBox="0 0 120 24" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g class="coil-turns"><ellipse cx="-6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 -6 12)"/><ellipse cx="6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 6 12)"/><ellipse cx="18" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 18 12)"/><ellipse cx="30" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 30 12)"/><ellipse cx="42" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 42 12)"/><ellipse cx="54" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 54 12)"/><ellipse cx="66" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 66 12)"/><ellipse cx="78" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 78 12)"/><ellipse cx="90" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 90 12)"/><ellipse cx="102" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 102 12)"/><ellipse cx="114" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 114 12)"/><ellipse cx="126" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 126 12)"/></g></svg></span>
+    <span class="slot-obj"><svg class="obj obj-chalkboard" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="cb-w-s05" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a7754a"/><stop offset="1" stop-color="#6b4422"/></linearGradient>
+      <radialGradient id="cb-b-s05" cx=".45" cy=".4" r=".75"><stop offset="0" stop-color="#2c4d3f"/><stop offset="1" stop-color="#182e25"/></radialGradient>
+    </defs>
+    <ellipse cx="60" cy="111" rx="44" ry="4.5" fill="#000" opacity=".38"/>
+    <rect x="13" y="20" width="94" height="78" rx="4" fill="url(#cb-w-s05)"/>
+    <rect x="19" y="26" width="82" height="64" rx="2" fill="url(#cb-b-s05)"/>
+    <ellipse cx="44" cy="44" rx="20" ry="9" fill="#fff" opacity=".05"/>
+    <g stroke="#efece2" stroke-linecap="round" fill="none">
+      <path d="M25 76 H95" stroke-width="1.3" opacity=".7"/>
+      <path d="M60 32 V86" stroke-width="1.3" opacity=".7"/>
+      <path d="M31 36 Q60 116 89 36" stroke-width="3.4"/>
+      <path d="M31.6 37.2 Q60 114 88.4 37.2" stroke-width="1" opacity=".35"/>
+    </g>
+    <circle cx="60" cy="76" r="2.4" fill="#efece2"/>
+    <text x="73" y="49" font-family="'Young Serif', Georgia, serif" font-style="italic" font-size="8.4" fill="#efece2" opacity=".9">y = x²</text>
+    <rect x="11" y="96" width="98" height="6" rx="2" fill="#5a381c"/>
+    <rect x="72" y="92.4" width="16" height="4.2" rx="2" fill="#f4f1e8"/>
+    <rect x="72" y="92.4" width="5" height="4.2" rx="1.6" fill="#d8d3c4"/></svg></span>
+  </button>
+  <p class="tag" aria-hidden="true">
+    <span class="tag-code">05</span>
+    <span class="tag-label">Teaching</span>
+    <span class="tag-price"><span class="pips" aria-hidden="true"><i></i></span><span class="tag-price-n">1</span></span>
+  </p>
+</li>
+<li class="slot" data-code="06">
+  <button class="slot-btn" type="button" data-code="06"
+    aria-label="06, Projects: a boxed sensor kit, 1 coin">
+    <span class="slot-coil"><svg class="coil" viewBox="0 0 120 24" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g class="coil-turns"><ellipse cx="-6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 -6 12)"/><ellipse cx="6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 6 12)"/><ellipse cx="18" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 18 12)"/><ellipse cx="30" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 30 12)"/><ellipse cx="42" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 42 12)"/><ellipse cx="54" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 54 12)"/><ellipse cx="66" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 66 12)"/><ellipse cx="78" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 78 12)"/><ellipse cx="90" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 90 12)"/><ellipse cx="102" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 102 12)"/><ellipse cx="114" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 114 12)"/><ellipse cx="126" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 126 12)"/></g></svg></span>
+    <span class="slot-obj"><svg class="obj obj-kit" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="kt-f-s06" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfa86a"/><stop offset="1" stop-color="#a47c40"/></linearGradient>
+    </defs>
+    <ellipse cx="60" cy="111" rx="44" ry="4.5" fill="#000" opacity=".38"/>
+    <path d="M14 42 L30 28 L104 28 L88 42z" fill="#dcbd85"/>
+    <path d="M88 42 L104 28 L104 90 L88 104z" fill="#8f6a33"/>
+    <rect x="14" y="42" width="74" height="62" fill="url(#kt-f-s06)"/>
+    <path d="M46 42 L62 28 L72 28 L56 42z" fill="#e9d8b0" opacity=".7"/>
+    <rect x="20" y="48" width="62" height="49" rx="2" fill="#f2ecdf"/>
+    <g stroke="#17605b" stroke-opacity=".18" stroke-width=".6">
+      <path d="M20 58 H82 M20 68 H82 M20 78 H82 M20 88 H82 M32 48 V97 M44 48 V97 M56 48 V97 M68 48 V97"/>
+    </g>
+    <rect x="25" y="54" width="15" height="26" rx="3" fill="#1d1b19"/>
+    <rect x="27" y="57" width="11" height="19" rx="1" fill="#57a69c"/>
+    <path d="M28 59 l4 0 l-4 6z" fill="#fff" opacity=".35"/>
+    <g fill="#8e2b2b">
+      <ellipse cx="47" cy="78" rx="1.7" ry="2.6" transform="rotate(-20 47 78)"/>
+      <ellipse cx="53" cy="74" rx="1.7" ry="2.6" transform="rotate(-35 53 74)"/>
+      <ellipse cx="59" cy="72" rx="1.7" ry="2.6" transform="rotate(-60 59 72)"/>
+      <ellipse cx="65" cy="73" rx="1.7" ry="2.6" transform="rotate(-80 65 73)"/>
+      <ellipse cx="71" cy="77" rx="1.7" ry="2.6" transform="rotate(-110 71 77)"/>
+    </g>
+    <path d="M44 82 Q60 64 76 82" fill="none" stroke="#8e2b2b" stroke-opacity=".35" stroke-width=".8" stroke-dasharray="1.6 1.6"/>
+    <text x="51" y="93.5" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, monospace" font-weight="500" font-size="5.6" letter-spacing="1.1" fill="#1d1b19">KIT 06 · SENSORS</text>
+    <path d="M14 42 H88" stroke="#fff" stroke-opacity=".25" stroke-width=".8"/></svg></span>
+  </button>
+  <p class="tag" aria-hidden="true">
+    <span class="tag-code">06</span>
+    <span class="tag-label">Projects</span>
+    <span class="tag-price"><span class="pips" aria-hidden="true"><i></i></span><span class="tag-price-n">1</span></span>
+  </p>
+</li>
+<li class="slot" data-code="07">
+  <button class="slot-btn" type="button" data-code="07"
+    aria-label="07, Off Hours: a music jewel case, 2 coins">
+    <span class="slot-coil"><svg class="coil" viewBox="0 0 120 24" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g class="coil-turns"><ellipse cx="-6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 -6 12)"/><ellipse cx="6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 6 12)"/><ellipse cx="18" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 18 12)"/><ellipse cx="30" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 30 12)"/><ellipse cx="42" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 42 12)"/><ellipse cx="54" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 54 12)"/><ellipse cx="66" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 66 12)"/><ellipse cx="78" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 78 12)"/><ellipse cx="90" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 90 12)"/><ellipse cx="102" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 102 12)"/><ellipse cx="114" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 114 12)"/><ellipse cx="126" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 126 12)"/></g></svg></span>
+    <span class="slot-obj"><svg class="obj obj-jewel" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="jw-i-s07" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22385a"/><stop offset="1" stop-color="#121d31"/></linearGradient>
+      <linearGradient id="jw-g-s07" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".34"/><stop offset=".38" stop-color="#fff" stop-opacity=".06"/><stop offset=".62" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".12"/></linearGradient>
+    </defs>
+    <ellipse cx="60" cy="111" rx="42" ry="4.5" fill="#000" opacity=".38"/>
+    <rect x="16" y="16" width="88" height="90" rx="2" fill="url(#jw-i-s07)"/>
+    <g stroke="#efe6d2" stroke-opacity=".55" stroke-width=".7">
+      <path d="M32 30 H96 M32 34 H96 M32 38 H96 M32 42 H96 M32 46 H96"/>
+    </g>
+    <g fill="#efe6d2">
+      <ellipse cx="44" cy="44" rx="2.6" ry="2" transform="rotate(-20 44 44)"/><rect x="46" y="31" width=".9" height="13"/>
+      <ellipse cx="56" cy="40" rx="2.6" ry="2" transform="rotate(-20 56 40)"/><rect x="58" y="27" width=".9" height="13"/>
+      <ellipse cx="68" cy="42" rx="2.6" ry="2" transform="rotate(-20 68 42)"/><rect x="70" y="29" width=".9" height="13"/>
+      <rect x="58" y="27" width="12.9" height="2"/>
+    </g>
+    <text x="34" y="62" font-family="'Young Serif', Georgia, serif" font-style="italic" font-size="9" fill="#e7c98f">Op. 7</text>
+    <g>
+      <rect x="28" y="72" width="70" height="26" fill="#f4eee0"/>
+      <g stroke="#1d1b19" stroke-opacity=".45" stroke-width=".6"><path d="M38 72 V98 M48 72 V98 M58 72 V98 M68 72 V98 M78 72 V98 M88 72 V98"/></g>
+      <g fill="#1d1b19"><rect x="35" y="72" width="5.5" height="15"/><rect x="45" y="72" width="5.5" height="15"/><rect x="65" y="72" width="5.5" height="15"/><rect x="75" y="72" width="5.5" height="15"/><rect x="85" y="72" width="5.5" height="15"/></g>
+    </g>
+    <rect x="16" y="16" width="9" height="90" fill="#0c1220"/>
+    <g fill="#5a6c8a" opacity=".6"><rect x="19" y="24" width="3" height="6" rx="1"/><rect x="19" y="92" width="3" height="6" rx="1"/></g>
+    <rect x="16" y="16" width="88" height="90" rx="2" fill="url(#jw-g-s07)"/>
+    <rect x="16.5" y="16.5" width="87" height="89" rx="2" fill="none" stroke="#fff" stroke-opacity=".38" stroke-width="1"/></svg></span>
+  </button>
+  <p class="tag" aria-hidden="true">
+    <span class="tag-code">07</span>
+    <span class="tag-label">Off Hours</span>
+    <span class="tag-price"><span class="pips" aria-hidden="true"><i></i><i></i></span><span class="tag-price-n">2</span></span>
+  </p>
+</li>
+<li class="slot" data-code="08">
+  <button class="slot-btn" type="button" data-code="08"
+    aria-label="08, Honors: an enamel pin on its card, 1 coin">
+    <span class="slot-coil"><svg class="coil" viewBox="0 0 120 24" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g class="coil-turns"><ellipse cx="-6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 -6 12)"/><ellipse cx="6" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 6 12)"/><ellipse cx="18" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 18 12)"/><ellipse cx="30" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 30 12)"/><ellipse cx="42" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 42 12)"/><ellipse cx="54" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 54 12)"/><ellipse cx="66" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 66 12)"/><ellipse cx="78" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 78 12)"/><ellipse cx="90" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 90 12)"/><ellipse cx="102" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 102 12)"/><ellipse cx="114" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 114 12)"/><ellipse cx="126" cy="12" rx="3.6" ry="10.4" transform="rotate(-18 126 12)"/></g></svg></span>
+    <span class="slot-obj"><svg class="obj obj-pin" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="pn-g-s08" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6dfa6"/><stop offset=".5" stop-color="#c49a54"/><stop offset="1" stop-color="#7f5f2c"/></linearGradient>
+      <radialGradient id="pn-e-s08" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#2a8a84"/><stop offset="1" stop-color="#0f4a46"/></radialGradient>
+    </defs>
+    <ellipse cx="60" cy="111" rx="30" ry="4.5" fill="#000" opacity=".38"/>
+    <rect x="27" y="10" width="66" height="98" rx="4" fill="#f2ecdf"/>
+    <rect x="52" y="16" width="16" height="5" rx="2.5" fill="#1d1b19" opacity=".75"/>
+    <path d="M50 76 L44 99 L52 94 L56 101 L58 78z" fill="#8e2b2b"/>
+    <path d="M70 76 L76 99 L68 94 L64 101 L62 78z" fill="#7a2324"/>
+    <circle cx="60" cy="58" r="23" fill="url(#pn-g-s08)"/>
+    <circle cx="60" cy="58" r="17.5" fill="url(#pn-e-s08)"/>
+    <g fill="url(#pn-g-s08)">
+      <ellipse cx="45" cy="64" rx="2" ry="4.2" transform="rotate(-35 45 64)"/>
+      <ellipse cx="48" cy="70" rx="2" ry="4.2" transform="rotate(-60 48 70)"/>
+      <ellipse cx="75" cy="64" rx="2" ry="4.2" transform="rotate(35 75 64)"/>
+      <ellipse cx="72" cy="70" rx="2" ry="4.2" transform="rotate(60 72 70)"/>
+    </g>
+    <path d="M60 45.5 l3.4 7 7.7 1.1 -5.6 5.4 1.3 7.6 -6.8 -3.6 -6.8 3.6 1.3 -7.6 -5.6 -5.4 7.7 -1.1z" fill="url(#pn-g-s08)"/>
+    <ellipse cx="53" cy="49" rx="6" ry="3" fill="#fff" opacity=".22" transform="rotate(-30 53 49)"/>
+    <text x="60" y="30.6" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, monospace" font-weight="500" font-size="4.8" letter-spacing="1.3" fill="#1d1b19" opacity=".7">No. 08</text></svg></span>
+  </button>
+  <p class="tag" aria-hidden="true">
+    <span class="tag-code">08</span>
+    <span class="tag-label">Honors</span>
+    <span class="tag-price"><span class="pips" aria-hidden="true"><i></i></span><span class="tag-price-n">1</span></span>
+  </p>
+</li>
+            </ul>
+            <div class="glass-sheen" aria-hidden="true"></div>
+          </div>
+
+          <div class="coinbox">
+            <div class="coin-slot" id="coin-slot" aria-hidden="true">
+              <i class="bolt b1"></i><i class="bolt b2"></i><i class="bolt b3"></i><i class="bolt b4"></i>
+              <span class="slot-label">COIN</span>
+              <span class="slot-hole"></span>
+              <span class="slot-arrow">▼</span>
+            </div>
+            <div class="cradle">
+              <button class="coin" id="coin" type="button" aria-label="Insert a free coin. Credit 0." aria-describedby="coin-hint">
+                <svg class="coin-art" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="cn-f-main" cx=".36" cy=".3" r=".85"><stop offset="0" stop-color="#fbe7b0"/><stop offset=".45" stop-color="#d1a95f"/><stop offset="1" stop-color="#8a6630"/></radialGradient>
+    <linearGradient id="cn-r-main" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4d998"/><stop offset="1" stop-color="#6f5225"/></linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#cn-r-main)"/>
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#5c4320" stroke-width="2.2" stroke-dasharray="1.2 1.6" opacity=".7"/>
+  <circle cx="32" cy="32" r="24.5" fill="url(#cn-f-main)"/>
+  <circle cx="32" cy="32" r="21.5" fill="none" stroke="#8a6630" stroke-opacity=".55" stroke-width="1"/>
+  <text x="32" y="38" text-anchor="middle" font-family="'Young Serif', Georgia, serif" font-size="17" fill="#6f5225" fill-opacity=".9">SR</text>
+  <ellipse cx="24" cy="20" rx="9" ry="4.5" fill="#fff" opacity=".28" transform="rotate(-30 24 20)"/>
+</svg>
+              </button>
+              <span class="cradle-label" id="coin-hint">Free coin · tap or drag</span>
+            </div>
+          </div>
+
+          <div class="keypad" role="group" aria-label="Keypad">
+            <button type="button" class="key key-1" data-key="1"><span>1</span></button><button type="button" class="key key-2" data-key="2"><span>2</span></button><button type="button" class="key key-3" data-key="3"><span>3</span></button><button type="button" class="key key-4" data-key="4"><span>4</span></button><button type="button" class="key key-5" data-key="5"><span>5</span></button><button type="button" class="key key-6" data-key="6"><span>6</span></button><button type="button" class="key key-7" data-key="7"><span>7</span></button><button type="button" class="key key-8" data-key="8"><span>8</span></button><button type="button" class="key key-9" data-key="9"><span>9</span></button><button type="button" class="key key-clr" data-key="CLR" aria-label="Clear"><span>CLR</span></button><button type="button" class="key key-0" data-key="0"><span>0</span></button><button type="button" class="key key-ok" data-key="OK" aria-label="OK, vend the selected code"><span>OK</span></button>
+          </div>
+
+          <a class="tray" id="tray" aria-disabled="true" aria-label="Pickup tray, empty" role="link">
+            <span class="tray-mouth" aria-hidden="true"><span class="tray-item" id="tray-item"></span></span>
+            <span class="tray-flap" aria-hidden="true"></span>
+            <span class="tray-label" aria-hidden="true">PUSH</span>
+          </a>
+
+          <div class="plate" aria-hidden="true">
+            <span class="dymo">1 PICK</span><span class="dymo">2 PAY</span><span class="dymo">3 TAKE</span>
+          </div>
+        </div>
+        <div class="base" aria-hidden="true"><i></i><i></i></div>
+        <div class="drop-layer" aria-hidden="true"></div>
+      </div>
+    </div>
+    <p class="sr-only" id="vend-live" role="status" aria-live="polite" aria-atomic="true"></p>
+    <noscript><p class="noscript">The machine needs JavaScript. Every shelf is also in the list at the top of the page.</p></noscript>
+  </section>
+</div>
+<script id="inventory" type="application/json">[{"code":"01","slug":"research","label":"Research","price":1,"objectName":"a banded paper reprint","screen":"RESEARCH"},{"code":"02","slug":"leadership","label":"Leadership","price":1,"objectName":"a cash tin with its ledger","screen":"LEADERSHIP"},{"code":"03","slug":"experience","label":"Experience","price":1,"objectName":"a badge wallet","screen":"EXPERIENCE"},{"code":"04","slug":"cv","label":"CV","price":1,"objectName":"a sealed dossier envelope","screen":"CV"},{"code":"05","slug":"teaching","label":"Teaching","price":1,"objectName":"a chalkboard teaching pack","screen":"TEACHING"},{"code":"06","slug":"projects","label":"Projects","price":1,"objectName":"a boxed sensor kit","screen":"PROJECTS"},{"code":"07","slug":"off-hours","label":"Off Hours","price":2,"objectName":"a music jewel case","screen":"OFF HOURS"},{"code":"08","slug":"honors","label":"Honors","price":1,"objectName":"an enamel pin on its card","screen":"HONORS"}]</script>
+<script src="../assets/js/machine.js" defer></script>
+</body>
+</html>

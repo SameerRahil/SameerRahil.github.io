@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" width="720" height="220" font-family="IBM Plex Sans, system-ui, sans-serif">
+  <title>DeployTeach tracking pipeline</title>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#1d1b19"/></marker>
+  </defs>
+  <rect width="720" height="220" fill="#fbf7ee"/>
+  <g font-size="13" fill="#1d1b19">
+    <rect x="16" y="46" width="118" height="48" rx="6" fill="#fff" stroke="#1d1b19"/>
+    <text x="75" y="67" text-anchor="middle" font-weight="600">Accelerometer</text>
+    <text x="75" y="84" text-anchor="middle" font-size="11" fill="#4a4640">~50 Hz</text>
+    <rect x="16" y="126" width="118" height="48" rx="6" fill="#fff" stroke="#1d1b19"/>
+    <text x="75" y="147" text-anchor="middle" font-weight="600">Game rotation</text>
+    <text x="75" y="164" text-anchor="middle" font-size="11" fill="#4a4640">no magnetometer</text>
+
+    <rect x="178" y="30" width="136" height="44" rx="6" fill="#e9f2f0" stroke="#15534e"/>
+    <text x="246" y="57" text-anchor="middle">Step detection</text>
+    <rect x="178" y="88" width="136" height="44" rx="6" fill="#e9f2f0" stroke="#15534e"/>
+    <text x="246" y="115" text-anchor="middle">Stride length</text>
+    <rect x="178" y="146" width="136" height="44" rx="6" fill="#e9f2f0" stroke="#15534e"/>
+    <text x="246" y="173" text-anchor="middle">Heading</text>
+
+    <rect x="360" y="76" width="150" height="68" rx="6" fill="#fff2ec" stroke="#8e2b2b"/>
+    <text x="435" y="104" text-anchor="middle" font-weight="600">Particle filter</text>
+    <text x="435" y="123" text-anchor="middle" font-size="11" fill="#4a4640">on a walkable floor grid</text>
+
+    <rect x="556" y="46" width="148" height="48" rx="6" fill="#fff" stroke="#1d1b19"/>
+    <text x="630" y="75" text-anchor="middle">Live path on map</text>
+    <rect x="556" y="126" width="148" height="48" rx="6" fill="#fff" stroke="#1d1b19"/>
+    <text x="630" y="147" text-anchor="middle">Compressed logs</text>
+    <text x="630" y="164" text-anchor="middle" font-size="11" fill="#4a4640">synced to Firebase</text>
+  </g>
+  <g stroke="#1d1b19" stroke-width="1.4" fill="none" marker-end="url(#a)">
+    <path d="M134 64 C 156 60, 160 52, 176 52"/>
+    <path d="M134 74 C 156 90, 160 108, 176 110"/>
+    <path d="M134 150 C 156 160, 160 168, 176 168"/>
+    <path d="M314 52 C 340 60, 344 92, 358 100"/>
+    <path d="M314 110 L 358 110"/>
+    <path d="M314 168 C 340 160, 344 128, 358 120"/>
+    <path d="M510 100 C 530 90, 536 72, 554 70"/>
+    <path d="M510 120 C 530 130, 536 148, 554 150"/>
+  </g>
+  <text x="360" y="204" text-anchor="middle" font-size="11" fill="#4a4640">The walkable floor grid comes from room photos (a teammate's Gemini step).</text>
+</svg>

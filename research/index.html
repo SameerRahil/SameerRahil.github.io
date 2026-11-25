@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Research · Sameer Rahil</title>
+<meta name="description" content="Why do models fail once the world stops looking like their training data, and can we see the failure coming from inside the model?">
+<meta name="theme-color" content="#07080b">
+<meta name="color-scheme" content="dark light">
+<link rel="canonical" href="https://sameerrahil.github.io/research/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Research · Sameer Rahil">
+<meta property="og:description" content="Why do models fail once the world stops looking like their training data, and can we see the failure coming from inside the model?">
+<meta property="og:image" content="https://sameerrahil.github.io/assets/img/og.jpg">
+<meta property="og:url" content="https://sameerrahil.github.io/research/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/young-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="../assets/css/page.css">
+</head>
+<body class="page page-research">
+<a class="skip" href="#content">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="back" href="../arcade/"><span aria-hidden="true">←</span> <span class="back-long">Back to the machine</span><span class="back-short">Machine</span></a>
+    <a class="tb-name" href="../arcade/">Sameer Rahil</a>
+    <nav class="tb-links" aria-label="Primary"><a href="../cv/Sameer-Rahil-CV.pdf" target="_blank" rel="noopener">CV</a><a href="../research/" aria-current="page">Research</a><a href="../contact/">Contact</a></nav>
+    <nav class="mode mode-arcade" aria-label="Site version">
+  <span class="mode-thumb" aria-hidden="true"></span>
+  <a class="mode-opt" href="../">Professional</a>
+  <a class="mode-opt" href="../arcade/" aria-current="page">Arcade</a>
+</nav>
+  </div>
+</header>
+<main id="content" class="wrap">
+  <article class="sheet">
+    <header class="hero">
+      <div class="hero-obj"><svg class="obj obj-reprint" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="rp-p-p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f0e0"/><stop offset="1" stop-color="#dccfb3"/></linearGradient>
+      <linearGradient id="rp-b-p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8443c"/><stop offset=".55" stop-color="#8e2b2b"/><stop offset="1" stop-color="#5c1a1b"/></linearGradient>
+    </defs>
+    <ellipse cx="60" cy="111" rx="36" ry="4.5" fill="#000" opacity=".38"/>
+    <rect x="31" y="15" width="64" height="90" rx="2" fill="#bfb293" transform="rotate(4 63 60)"/>
+    <rect x="25" y="18" width="64" height="90" rx="2" fill="#d6c9ab" transform="rotate(-2.5 57 63)"/>
+    <rect x="27" y="14" width="66" height="92" rx="2" fill="url(#rp-p-p)"/>
+    <rect x="34" y="21" width="46" height="4.4" rx="1" fill="#25262b" opacity=".88"/>
+    <rect x="34" y="28.5" width="32" height="2.4" rx="1" fill="#25262b" opacity=".5"/>
+    <g fill="#25262b" opacity=".28">
+      <rect x="34" y="35" width="52" height="1.8"/><rect x="34" y="39" width="49" height="1.8"/>
+      <rect x="34" y="43" width="51" height="1.8"/><rect x="34" y="47" width="38" height="1.8"/>
+      <rect x="62" y="79" width="24" height="1.6"/><rect x="62" y="83" width="22" height="1.6"/>
+      <rect x="62" y="87" width="24" height="1.6"/><rect x="62" y="91" width="18" height="1.6"/>
+      <rect x="34" y="99" width="52" height="1.6"/>
+    </g>
+    <rect x="34" y="77" width="24" height="18" fill="#fff" stroke="#25262b" stroke-opacity=".35" stroke-width=".8"/>
+    <polyline points="35.5,92 40,88.5 44,89.5 48,83 52,84 56.5,79.5" fill="none" stroke="#17605b" stroke-width="1.7" stroke-linejoin="round"/>
+    <polyline points="35.5,93 40,92 44,90.5 48,90 52,88 56.5,87.5" fill="none" stroke="#8e2b2b" stroke-width="1.1" stroke-dasharray="2 1.4"/>
+    <rect x="23" y="53" width="74" height="18" rx="1.5" fill="url(#rp-b-p)"/>
+    <rect x="23" y="53" width="74" height="1.6" fill="#fff" opacity=".22"/>
+    <rect x="23" y="69.4" width="74" height="1.6" fill="#000" opacity=".2"/>
+    <text x="60" y="65.3" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, monospace" font-weight="500" font-size="7.4" letter-spacing="1.8" fill="#f6ead0">REPRINT</text>
+    <path d="M27 14 h66 v92 h-66z" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width=".6"/></svg></div>
+      <div class="hero-text">
+        <p class="hero-kicker"><span class="code">01</span><span>Banded reprint</span><span class="hero-price">1 coin</span></p>
+        <h1>Research</h1>
+        <p class="hero-sum">Why do models fail once the world stops looking like their training data, and can we see the failure coming from inside the model?</p>
+      </div>
+    </header>
+    <div class="body">
+
+<section class="glance" aria-labelledby="glance-h">
+  <h2 id="glance-h">At a glance</h2>
+  <dl class="glance-grid">
+    <div><dt>Focus</dt><dd>ML reliability and model behavior: out-of-distribution (OOD) detection, mechanistic interpretability with sparse autoencoders, feature attribution and targeted interventions, robust and sharpness-aware optimization in federated learning. In software engineering: software testing, AI for software engineering (AI4SE), software engineering for AI (SE4AI) and agents for software engineering.</dd></div>
+    <div><dt>Advisor</dt><dd>Prof. Muhammad Tahir, LUMS (OOD research; graduate course in Advanced Topics in ML)</dd></div>
+    <div><dt>Output so far</dt><dd>One arXiv preprint (not peer-reviewed), one manuscript in preparation, one unpublished research line, six course research reports</dd></div>
+    <div><dt>Looking for</dt><dd>Research-based MS/MMath or PhD positions starting Fall 2027</dd></div>
+  </dl>
+  <p class="glance-actions">
+    <a class="btn" href="../cv/Sameer-Rahil-CV.pdf" target="_blank" rel="noopener">Read the CV</a>
+    <button class="btn btn-ghost" type="button" data-copy-link>Copy link to this page</button>
+    <button class="btn btn-ghost" type="button" data-print>Print or save as PDF</button>
+  </p>
+  <p class="legend"><span class="legend-label">Status labels:</span> <span class="chip chip-pub">Preprint on arXiv · not peer-reviewed</span> <span class="chip chip-live">Manuscript in preparation</span> <span class="chip chip-muted">Unpublished</span> <span class="chip chip-course">Course research</span></p>
+</section>
+
+<h2 class="sec-h">Research lines</h2>
+
+<article class="entry" id="ood-editing">
+  <header class="entry-head">
+    <h3>Editing the internal pathways behind confident OOD mistakes</h3>
+    <p class="chips"><span class="chip chip-muted">Unpublished</span> <span class="chip chip-muted">On hold since Oct 2026</span></p>
+    <p class="entry-meta">Independent research with Prof. Muhammad Tahir · LUMS · January - October 2026</p>
+  </header>
+  
+  <p class="question"><strong>Question.</strong> When a classifier confidently accepts an input from a class it has never seen, which internal features carry that mistake, and can removing them help without retraining the model?</p>
+  <p><strong>What I did.</strong> I designed and ran every experiment in this line (more than twenty experiment runs) and wrote the analysis updates for my advisor.</p>
+  <ul>
+    <li>Built on the SALVE sparse-autoencoder pipeline, using its official code unmodified, to break a classifier's penultimate features into sparse, inspectable directions.</li>
+    <li>Scored “leakage” pathways: the class-to-feature routes that carry OOD false accepts on a calibration split. I then localized them in images with occlusion maps.</li>
+    <li>Intervened with closed-form rank-one projection edits to the final-layer weights. Edits were chosen on calibration data only and evaluated once on held-out, label-disjoint OOD classes with five standard detectors (MSP, MLS, Energy, ReAct, ViM).</li>
+  </ul>
+  <p><strong>What I found.</strong></p>
+  <ul>
+    <li>On label-disjoint Fashion-MNIST open-set splits, mean OOD AUROC rose by roughly 24 to 26 points at less than one point of in-distribution accuracy cost.</li>
+    <li>On CIFAR-10 against CIFAR-100 and on a TinyImageNet subset, gains were real but small (about +0.6 to +0.7 points). A deliberately mismatched Fashion-MNIST split made results worse (-6.4 points), and I report it that way.</li>
+    <li>A pre-registered sweep over 72 Fashion-MNIST splits explained the gap. Edits transfer in proportion to how much of the new failures' pathway mass they cover (Spearman ρ = 0.84; all 24 high-coverage splits improved, 22 of 24 low-coverage splits got worse). The calibration gain itself predicted little (ρ = 0.31).</li>
+  </ul>
+  <p class="note">Status: a CIFAR-100 superclass replication was designed with pre-registered hypotheses but not completed before the project was paused. No write-up has been submitted.</p>
+</article>
+
+
+<article class="entry" id="ci-batching">
+  <header class="entry-head">
+    <h3>Build-outcome predictors inside CI batching</h3>
+    <p class="chips"><span class="chip chip-live">In progress</span> <span class="chip chip-live">Manuscript in preparation</span></p>
+    <p class="entry-meta">Research project, AI-Driven Software Engineering, LUMS · with two classmates · Fall 2026</p>
+  </header>
+  
+  <p class="question"><strong>Question.</strong> If a build-outcome predictor scores better on its own, does it also save more continuous-integration runs once it decides which builds a batching workflow skips?</p>
+  <ul>
+    <li>We integrated BuildFast, RavenBuild-CR and the Parrot baseline into a prediction-assisted batching simulation and evaluated them on 42 open-source projects from CircleCI and TravisTorrent (4,040 held-out builds).</li>
+    <li>We varied prediction thresholds, timeouts, batch formation and failure diagnosis. Settings were chosen on earlier builds and tested on later, unseen ones.</li>
+    <li>We built a feature-family taxonomy of the 84 predictor features to explain the predictors' behavior.</li>
+  </ul>
+  <p><strong>Draft findings.</strong> BuildFast and RavenBuild-CR saved about the same number of executions and made the same decision on 92 to 98% of builds. Both drew 58 to 63% of their decision weight from features that need observed build outcomes. Batching stops observing the builds it skips, so those features freeze; we call this <em>observation starvation</em>. Up to 72% of configurations without a timeout never triggered a build. Batch formation and failure diagnosis mattered far more than the choice of predictor.</p>
+</article>
+
+
+<article class="entry" id="fedscam">
+  <header class="entry-head">
+    <h3>FedSCAM: heterogeneity-aware sharpness-aware minimization for federated learning</h3>
+    <p class="chips"><span class="chip chip-course">Course research</span> <span class="chip chip-pub">Preprint on arXiv · not peer-reviewed</span></p>
+    <p class="entry-meta">Advanced Topics in Machine Learning (graduate), taught by Prof. Muhammad Tahir · September - December 2025</p>
+  </header>
+  
+  <p class="authors"><strong>S. Rahil*</strong>, Z. A. Ahmad*, T. Asif* (*equal contribution). <a href="https://arxiv.org/abs/2601.00853" rel="noopener">arXiv:2601.00853</a> · <a href="https://github.com/SameerRahil/FedSCAM" rel="noopener">Code on GitHub</a></p>
+  <p><strong>Problem.</strong> In federated learning with non-IID clients, sharpness-aware methods use one perturbation radius for every client, which can destabilize the global model when some clients' data is very skewed.</p>
+  <p><strong>Approach.</strong> FedSCAM estimates a heterogeneity score for each client from early-batch gradient norms. It shrinks that client's SAM radius as the score rises, and aggregates updates with weights that penalize heterogeneity and reward alignment with the previous global update.</p>
+  <p><strong>Results.</strong> On CIFAR-10 with ResNet-18 under Dirichlet label skew (α = 0.5), FedSCAM improved final accuracy over FedSAM by 4.6 points. On Fashion-MNIST (α = 0.1) it reached 65.41%, against FedLESAM's 65.76%, while taking about 12% less time per round. All nine baselines were re-implemented under identical splits. The study used two to three seeds without reported variance, which the preprint notes as a limitation.</p>
+  <p><strong>My part.</strong> Equal contribution, and I am the first-listed author. I worked on the algorithm design (the per-client radius and the heterogeneity- and alignment-aware aggregation), ran the Fashion-MNIST comparison against the sharpness-aware baselines and the ablation and hyperparameter studies, and wrote most of the manuscript.</p>
+</article>
+
+<h2 class="sec-h">Course research reports</h2>
+<p class="sec-lede">Six group studies written in ICML format for Advanced Topics in Machine Learning (Fall 2025), with Zain Abdullah Ahmad and Talha Asif. Each went beyond reimplementation, with its own experiments and analysis.</p>
+<ol class="reports">
+  <li><a href="https://github.com/SameerRahil/Advanced-Topics-in-Machine-Learning-PA1" rel="noopener">Inductive Bias in Vision</a>: CNNs vs. ViTs, VAEs vs. GANs, and CLIP, compared through out-of-distribution generalization.</li>
+  <li><a href="https://github.com/SameerRahil/Advanced-Topics-in-Machine-Learning-PA2" rel="noopener">Shifts Happen</a>: domain adaptation and generalization (DAN, DANN, CDAN, IRM, Group DRO, SAM, CLIP prompts) on PACS.</li>
+  <li><a href="https://github.com/SameerRahil/Advanced-Topics-in-Machine-Learning-PA3" rel="noopener">Compress to Impress</a>: pruning, quantization and knowledge distillation on VGG-11 / CIFAR-100.</li>
+  <li><a href="https://github.com/SameerRahil/Advanced-Topics-in-Machine-Learning-PA4" rel="noopener">Skewed Clients, Skewed Outcomes</a>: how label heterogeneity shapes federated averaging.</li>
+  <li><a href="https://github.com/SameerRahil/Advanced-Topics-in-Machine-Learning-PA5" rel="noopener">Aligned Tokens, Aligned Features</a>: decoding strategies, DPO/PPO/GRPO alignment of SmolLM2-135M, and universal sparse autoencoders across ResNet and ViT.</li>
+  <li><a href="https://github.com/SameerRahil/Advanced-Topics-in-Machine-Learning-PA6" rel="noopener">Training Values, Finding Circuits</a>: an RLHF stack under an 8-bit + LoRA budget, and grokking on modular addition dissected with Fourier analysis.</li>
+</ol>
+    </div>
+  </article>
+
+  <nav class="shelfnav" aria-label="All shelves">
+    <p class="pn"><span></span>
+      <a href="../leadership/" rel="next"><span class="code">02</span> Leadership <span aria-hidden="true">→</span></a></p>
+    <h2 class="shelfnav-h">Every shelf</h2>
+    <ol class="shelfnav-list">
+      <li><a href="../research/" aria-current="page"><span class="code">01</span> Research</a></li><li><a href="../leadership/"><span class="code">02</span> Leadership</a></li><li><a href="../experience/"><span class="code">03</span> Experience</a></li><li><a href="../cv/"><span class="code">04</span> CV</a></li><li><a href="../teaching/"><span class="code">05</span> Teaching</a></li><li><a href="../projects/"><span class="code">06</span> Projects</a></li><li><a href="../off-hours/"><span class="code">07</span> Off Hours</a></li><li><a href="../honors/"><span class="code">08</span> Honors</a></li>
+      <li><a href="../contact/"><span class="code">··</span> Contact</a></li>
+    </ol>
+  </nav>
+</main>
+<footer class="foot">
+  <p><a href="mailto:sameerrahil07@gmail.com">sameerrahil07@gmail.com</a> · <a href="https://github.com/SameerRahil" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/sameer-rahil/" rel="noopener">LinkedIn</a></p>
+  <p class="foot-small"><a href="../arcade/">Back to the machine</a> · Lahore, Pakistan</p>
+</footer>
+<script src="../assets/js/page.js" defer></script>
+</body>
+</html>

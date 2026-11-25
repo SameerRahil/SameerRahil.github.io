@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" width="720" height="220" font-family="IBM Plex Sans, system-ui, sans-serif">
+  <title>Kernel layers</title>
+  <rect width="720" height="220" fill="#fbf7ee"/>
+  <g font-size="13" fill="#1d1b19">
+    <rect x="20" y="16" width="680" height="32" rx="4" fill="#fff" stroke="#1d1b19"/>
+    <text x="360" y="37" text-anchor="middle">Shell · help, echo, clear, color, repeat …  ·  system calls via int 0x80</text>
+    <rect x="20" y="56" width="332" height="32" rx="4" fill="#e9f2f0" stroke="#15534e"/>
+    <text x="186" y="77" text-anchor="middle">File system · inodes, bitmaps, VFS</text>
+    <rect x="368" y="56" width="332" height="32" rx="4" fill="#e9f2f0" stroke="#15534e"/>
+    <text x="534" y="77" text-anchor="middle">Processes · ELF loader, round-robin scheduler</text>
+    <rect x="20" y="96" width="680" height="32" rx="4" fill="#fff2ec" stroke="#8e2b2b"/>
+    <text x="360" y="117" text-anchor="middle">Memory · frame bitmap, two-level paging, buddy heap (kmalloc / kfree / krealloc)</text>
+    <rect x="20" y="136" width="680" height="32" rx="4" fill="#fff" stroke="#1d1b19"/>
+    <text x="360" y="157" text-anchor="middle">Interrupts &amp; drivers · IDT/ISRs, PIT timer, VGA text mode, PS/2 keyboard, TSS</text>
+    <rect x="20" y="176" width="680" height="30" rx="4" fill="#1d1b19"/>
+    <text x="360" y="196" text-anchor="middle" fill="#f3ecdd">32-bit x86 hardware (QEMU)</text>
+  </g>
+</svg>
